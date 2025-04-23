@@ -1,0 +1,67 @@
+.menu li
+
+{
+
+    position: relative;
+
+}
+
+.menu li::after
+
+{
+
+    content: '';
+
+    width: 0%;
+
+    height: 2px;
+
+    background: #000;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    transition: 0.9s;
+
+}
+
+.menu li:hover::after
+
+{
+
+    width: 100%;
+
+}
+
+.menu li::before
+
+{
+
+    content: '';
+
+    width: 0%;
+
+    height: 2px;
+
+    background: #000;
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: -4px;
+
+    transition: 0.9s;
+
+}
+
+.menu li:hover::before
+
+{
+
+    width: 100%;
+
+}
